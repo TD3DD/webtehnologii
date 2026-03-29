@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Опитування студентів</title>
+</head>
+<body bgcolor="#e8edf2" text="#333333">
+
+    <font face="Arial, Helvetica, sans-serif">
+
+        <br>
+        <h1 align="center">Анкета студента</h1>
+        <p align="center">
+            <font size="3" color="#555555">Допоможіть нам дізнатися більше про ваші інтереси та навчання.</font>
+        </p>
+
+        <table align="center" width="700" border="0" cellpadding="20" cellspacing="0" bgcolor="#ffffff">
+            <tr>
+                <td>
+                    <form action="#" method="POST">
+                        
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                            
+                            <tr bgcolor="#f9f9f9">
+                                <td width="40%" valign="top">
+                                    <b>ПІБ або Нікнейм:</b>
+                                </td>
+                                <td width="60%">
+                                    <input type="text" name="student_name" size="35" placeholder="Введіть ваше ім'я">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td valign="top">
+                                    <b>Секретний PIN-код:</b><br>
+                                    <font size="2" color="#888888">(Для підтвердження особи)</font>
+                                </td>
+                                <td>
+                                    <input type="password" name="student_pin" size="15">
+                                </td>
+                            </tr>
+
+                            <tr bgcolor="#f9f9f9">
+                                <td valign="top">
+                                    <b>Ваша спеціальність:</b>
+                                </td>
+                                <td>
+                                    <select name="major">
+                                        <option value="none">-- Оберіть зі списку --</option>
+                                        <option value="software">Інженерія програмного забезпечення</option>
+                                        <option value="computer_science">Комп'ютерні науки</option>
+                                        <option value="cyber">Кібербезпека</option>
+                                        <option value="other">Інша спеціальність</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td valign="top">
+                                    <b>Курс навчання:</b>
+                                </td>
+                                <td>
+                                    <input type="radio" name="course" value="1"> 1 курс<br>
+                                    <input type="radio" name="course" value="2" checked> 2 курс<br>
+                                    <input type="radio" name="course" value="3"> 3 курс<br>
+                                    <input type="radio" name="course" value="4"> 4 курс
+                                </td>
+                            </tr>
+
+                            <tr bgcolor="#f9f9f9">
+                                <td valign="top">
+                                    <b>Чим займаєтесь у вільний час?</b><br>
+                                    <font size="2" color="#888888">(Можна обрати декілька)</font>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="hobby" value="sports"> Займаюся спортом (тренажерний зал, біг)<br>
+                                    <input type="checkbox" name="hobby" value="reading"> Читаю художню або фахову літературу<br>
+                                    <input type="checkbox" name="hobby" value="music"> Слухаю музику, граю на інструментах<br>
+                                    <input type="checkbox" name="hobby" value="volunteering"> Беру участь у студентському самоврядуванні<br>
+                                    <input type="checkbox" name="hobby" value="travel"> Відпочиваю на природі, подорожую
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td valign="top">
+                                    <b>Ваші пропозиції щодо навчання:</b>
+                                </td>
+                                <td>
+                                    <textarea name="feedback" rows="5" cols="45" placeholder="Напишіть свої ідеї тут..."></textarea>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <br><br>
+                                    <input type="submit" value="Відправити анкету">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="reset" value="Очистити форму">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+
+    </font>
+
+</body>
+</html>
