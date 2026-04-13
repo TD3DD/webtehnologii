@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Booking Form</title>
+</head>
+<body bgcolor="#f4f7f8" topmargin="20" leftmargin="0" marginwidth="0" marginheight="0">
+
+    <font face="Arial, Helvetica, sans-serif">
+
+        <table align="center" width="750" height="220" border="0" cellpadding="0" cellspacing="0" background="beach.avif">
+            <tr>
+                <td align="center" valign="middle">
+                    
+                    <table border="0" cellpadding="10" cellspacing="0">
+                        <tr>
+                            <td align="center">
+                                <table border="0" cellpadding="2" cellspacing="0" bgcolor="#cccccc">
+                                    <tr><td>
+                                        <table border="0" cellpadding="6" cellspacing="0" bgcolor="#ffffff">
+                                            <tr><td><img src="room1.avif" width="160" height="160" alt="Room 1" border="0"></td></tr>
+                                        </table>
+                                    </td></tr>
+                                </table>
+                            </td>
+                            
+                            <td align="center">
+                                <table border="0" cellpadding="2" cellspacing="0" bgcolor="#cccccc">
+                                    <tr><td>
+                                        <table border="0" cellpadding="6" cellspacing="0" bgcolor="#ffffff">
+                                            <tr><td><img src="room2.jpg" width="160" height="160" alt="Room 2" border="0"></td></tr>
+                                        </table>
+                                    </td></tr>
+                                </table>
+                            </td>
+
+                            <td align="center">
+                                <table border="0" cellpadding="2" cellspacing="0" bgcolor="#cccccc">
+                                    <tr><td>
+                                        <table border="0" cellpadding="6" cellspacing="0" bgcolor="#ffffff">
+                                            <tr><td><img src="room3.avif" width="160" height="160" alt="Room 3" border="0"></td></tr>
+                                        </table>
+                                    </td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+        <table align="center" width="750" border="0" cellpadding="20" cellspacing="0" bgcolor="#ffffff">
+            <tr>
+                <td>
+                    <h1 align="center">Hotel Booking</h1>
+                    <p align="center">
+                        <font size="3" color="#555555">Special discounts for "Програмування для Інтернет" students</font>
+                    </p>
+
+                    <form action="#" method="POST">
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                            
+                            <tr>
+                                <td width="50%" valign="top">
+                                    <b>Name</b> <font color="red">*</font><br><br>
+                                    
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td><input type="text" name="first_name" size="20"></td>
+                                            <td width="10"></td> <td><input type="text" name="last_name" size="20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><font size="2" color="#999999">First Name</font></td>
+                                            <td></td>
+                                            <td valign="top"><font size="2" color="#999999">Last Name</font></td>
+                                        </tr>
+                                    </table>
+                                    </td>
+                                <td width="50%" valign="top">
+                                    <b>E-mail</b> <font color="red">*</font><br><br>
+                                    <input type="email" name="email" size="62" placeholder="ex: myname@example.com"><br>
+                                    <font size="2" color="#999999">example@example.com</font>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td valign="top">
+                                    <b>Room Type</b><br><br>
+                                    <select name="room_type">
+                                        <option value="">Please Select</option>
+                                        <option value="single">Single Room</option>
+                                        <option value="double">Double Room</option>
+                                        <option value="suite">Suite</option>
+                                    </select>
+                                </td>
+                                <td valign="top">
+                                    <b>Number of Guests</b> <font color="red">*</font><br><br>
+                                    <input type="number" name="guests" placeholder="e.g., 4" min="1" max="10" size="62"><br>
+                                    <font size="2" color="#999999">(min 1, max 10)</font>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" valign="top">
+                                    <b>Arrival Date & Time</b> <font color="red">*</font><br><br>
+                                    <input type="date" name="arrival_date">
+                                    &nbsp;&nbsp;
+                                    <input type="text" name="arrival_time" size="10" placeholder="12:40">
+                                    <select name="ampm">
+                                        <option value="AM">AM</option>
+                                        <option value="PM" selected>PM</option>
+                                    </select><br>
+                                    <font size="2" color="#999999">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hour Minutes</font>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" valign="top">
+                                    <b>Departure Date</b> <font color="red">*</font><br><br>
+                                    <select name="dep_month">
+                                        <option value="">Please select a month</option>
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                    </select>
+                                    <select name="dep_day">
+                                        <option value="">Please select a day</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="21">21</option>
+                                    </select>
+                                    <select name="dep_year">
+                                        <option value="">Please select a year</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                    </select><br>
+                                    <font size="2" color="#999999">Month &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Day &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Year</font>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" valign="top">
+                                    <b>Free Pickup?</b> <font color="red">*</font><br><br>
+                                    <input type="radio" name="pickup" value="yes"> Yes Please! - Pick me up on arrival
+                                    &nbsp;&nbsp;&nbsp;
+                                    <input type="radio" name="pickup" value="no"> No Thanks - I'll make my own way there
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" valign="top">
+                                    <b>Flight Number</b><br><br>
+                                    <input type="text" name="flight_number" size="70">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" valign="top">
+                                    <b>Meals</b> <font color="red">*</font><br><br>
+                                    <input type="checkbox" name="meal" value="breakfast"> breakfast<br>
+                                    <input type="checkbox" name="meal" value="lunch"> lunch<br>
+                                    <input type="checkbox" name="meal" value="afternoon_tea"> afternoon tea<br>
+                                    <input type="checkbox" name="meal" value="dinner"> dinner
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" valign="top">
+                                    <b>Special Requests</b><br><br>
+                                    <textarea name="requests" rows="6" cols="85"></textarea>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" align="center" valign="top">
+                                    <br>
+                                    <input type="submit" value="Submit" style="background-color: #42b9f5; color: white; border: none; padding: 12px 40px; font-size: 16px; border-radius: 4px; cursor: pointer;">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+
+    </font>
+
+</body>
+</html>

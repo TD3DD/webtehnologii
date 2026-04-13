@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Списки та Календар</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+
+        ul li:nth-child(even) {
+            background-color: #d9ead3;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        ol li:nth-child(3n+2) {
+            background-color: #fff2cc;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        dl dt:first-of-type,
+        dl dd:first-of-type,
+        dl dt:last-of-type,
+        dl dd:last-of-type {
+            color: #1155cc;
+            font-weight: bold;
+            background-color: #e8f0fe;
+            padding: 5px;
+        }
+
+        dt { margin-top: 10px; font-weight: bold; }
+        dd { margin-left: 20px; margin-bottom: 10px; }
+
+
+
+        table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 15px;
+            font-size: 32px; 
+        }
+
+        th {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        /* Перший стовпець (Номери тижнів) - курсивом і меншим шрифтом */
+        td:first-child, th:first-child {
+            font-style: italic;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Вихідні дні (Неділя та Субота - 2 та 8 стовпці) - зелені */
+        td:nth-child(2), 
+        td:nth-child(8) {
+            color: #2ea349;
+        }
+
+        /* Дні попереднього місяця (Липень) - сірі */
+        tr:nth-child(2) td:nth-child(2),
+        tr:nth-child(2) td:nth-child(3),
+        tr:nth-child(2) td:nth-child(4),
+        tr:nth-child(2) td:nth-child(5) {
+            color: grey;
+        }
+
+        /* День народження - 2 СЕРПНЯ */
+        tr:nth-child(2) td:nth-child(7) {
+            color: #8e7cc3; 
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Святкові дні - червоні (24 серпня - День Незалежності) */
+        tr:nth-child(5) td:nth-child(8) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Завдання 1: Три типи списків</h2>
+
+    <h3>1. Улюблені відеоігри (Маркований список)</h3>
+    <ul>
+        <li>Відьмак 3: Дикий Гін</li>
+        <li>Minecraft</li>
+        <li>Red Dead Redemption 2</li>
+        <li>Hollow Knight</li>
+        <li>Portal 2</li>
+        <li>Cyberpunk 2077</li>
+    </ul>
+
+    <h3>2. Улюблені фільми та серіали (Нумерований список)</h3>
+    <ol>
+        <li>Володар перснів: Братерство персня</li>
+        <li>Інтерстеллар</li>
+        <li>Матриця</li>
+        <li>Справжній детектив (1 сезон)</li>
+        <li>Пуститися берега (Breaking Bad)</li>
+        <li>Дюна</li>
+        <li>Атака титанів</li>
+        <li>Початок (Inception)</li>
+        <li>Темний лицар</li>
+        <li>Чорне дзеркало</li>
+        <li>Зоряні війни: Імперія завдає удару у відповідь</li>
+    </ol>
+
+    <h3>3. Улюблені навчальні предмети (Список описів)</h3>
+    <dl>
+        <dt>Програмування</dt>
+        <dd>Процес створення алгоритмів та написання коду для розв'язання практичних задач.</dd>
+
+        <dt>Математика</dt>
+        <dd>Цариця наук, що розвиває логічне та структурне мислення.</dd>
+
+        <dt>Історія</dt>
+        <dd>Аналіз та вивчення подій минулого для кращого розуміння причинно-наслідкових зв'язків сьогодення.</dd>
+
+        <dt>Фізика</dt>
+        <dd>Фундаментальна наука, яка досліджує закони природи та будову Всесвіту.</dd>
+    </dl>
+
+    <hr style="margin: 40px 0;">
+
+    <h1 style="text-align: center; font-family: sans-serif; font-size: 40px; margin-bottom: 5px;">Серпень (August)</h1>
+    
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+        </tr>
+    </table>
+
+</body>
+</html>
